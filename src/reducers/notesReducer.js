@@ -21,6 +21,11 @@ const notesReducer = (state = initialState, action) => {
                     index === action.payload.index ? action.payload.newText : note
                 )
             };
+        case 'DELETE_ALL' :
+            return {
+                ...state, 
+                notes: []
+            };
         default:
             return state;
     }

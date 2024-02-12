@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addNote } from '../actions/notesActions';
+import { addNote, deleteAll, deleteNote } from '../actions/notesActions';
 import { View, TextInput, Button, StyleSheet } from 'react-native';
 
 const NoteForm = () => {
@@ -14,8 +14,13 @@ const NoteForm = () => {
         }
     };
 
+    const handleDeleteAll = () => {
+        dispatch(deleteAll());
+    }
+
     return (
-        <View style={styles.container}>
+        <View>
+            <View style={styles.container}>
             <TextInput
                 style={styles.input}
                 placeholder="Type your note here"
@@ -23,6 +28,10 @@ const NoteForm = () => {
                 onChangeText={(text) => setNoteText(text)}
             />
             <Button title="Add Note" onPress={handleAddNote} />
+            </View>
+            <View style={styles.buttonContainer}>
+                <Button title="Delete All jing" onPress={handleDeleteAll} />
+             </View>
         </View>
     );
 };

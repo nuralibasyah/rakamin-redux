@@ -27,3 +27,12 @@ export const editNote = (note, newText) => {
         payload: { index: note, newText: newText }
     };
 };
+
+export const deleteAll = () => {
+    return {
+        type: 'DELETE_ALL',
+        payload: null,
+    };
+};
+
+

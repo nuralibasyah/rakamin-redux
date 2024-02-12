@@ -4,7 +4,7 @@ import {createStore} from 'redux';
 import notesReducer from './src/reducers/notesReducer';
 import NoteForm from './src/components/NoteForm';
 import NoteList from './src/components/NoteList';
-import {View} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 
 const store = createStore(notesReducer);
 
@@ -20,11 +20,8 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-  container:{
+  Container:{
     marginTop:20,
-  },
-  blue:{
-    color:'blue',
   },
 });
 

@@ -12,5 +12,6 @@ const rootReducer = (state = initialState, action) => {
       break;
   }
 };
+//mw
 
 export default rootReducer;

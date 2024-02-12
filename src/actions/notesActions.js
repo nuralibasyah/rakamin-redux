@@ -20,16 +20,10 @@ export const startEdit = (note) => {
     };
 };
 
-export const saveEdit = (note, newText) => {
-    return {
-        type: 'SAVE_EDIT',
-        payload: { note, newText },
-    };
-};
 
 export const editNote = (note, newText) => {
     return {
         type: 'EDIT_NOTE',
-        payload: { note, newText },
+        payload: { index: note, newText: newText }
     };
 };

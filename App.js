@@ -19,4 +19,13 @@ const App = () => {
   );
 };
 
+const styles = StyleSheet.create({
+  container:{
+    marginTop:20,
+  },
+  blue:{
+    color:'blue',
+  },
+});
+
 export default App;

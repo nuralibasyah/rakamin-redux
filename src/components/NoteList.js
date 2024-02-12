@@ -6,16 +6,15 @@ const NoteList = () => {
     const notes = useSelector ((state)=>state.notes);
 
     return (
-        <view>
+        <View>
             <Text>Notes:</Text>
             <FlatList
             data={notes}
             keyExtractor={(item, index)=>index.toString()}
             renderItem = {({item})=><Text>{item}</Text>}
             />
-        </view>
+        </View>
     );
-
 };
 
 export default NoteList;

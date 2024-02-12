@@ -5,7 +5,7 @@ import {View, TextInput, Button} from 'react-native';
 
 const NoteForm = () =>{
     const [noteText, setNoteText] = useState('');
-    const dispatch = useDispatch;
+    const dispatch = useDispatch();
 
     const handleAddNote = () =>{
         if(noteText.trim()!==''){

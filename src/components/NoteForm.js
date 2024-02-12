@@ -30,7 +30,7 @@ const NoteForm = () => {
             <Button title="Add Note" onPress={handleAddNote} />
             </View>
             <View style={styles.buttonContainer}>
-                <Button title="Delete All jing" onPress={handleDeleteAll} />
+                <Button title="Delete All" onPress={handleDeleteAll} color='red'/>
              </View>
         </View>
     );

@@ -30,8 +30,7 @@ export const editNote = (note, newText) => {
 
 export const deleteAll = () => {
     return {
-        type: 'DELETE_ALL',
-        payload: null,
+        type: 'DELETE_ALL'
     };
 };
 

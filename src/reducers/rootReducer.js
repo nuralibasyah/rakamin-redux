@@ -1,3 +1,4 @@
+
 const initialState = { count: 0 };
 
 const rootReducer = (state = initialState, action) => {
@@ -13,4 +14,4 @@ const rootReducer = (state = initialState, action) => {
   }
 };
 
-export default rootReducer;
+export default rootReducer;
